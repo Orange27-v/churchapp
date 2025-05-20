@@ -6,6 +6,7 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "churchapp",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -28,9 +29,12 @@
       "permissions": ["android.permission.FOREGROUND_SERVICE"]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "server",
+      "bundler": "metro"
     },
     "plugins": [
+      "expo-router",
       [
         "expo-av",
         {
